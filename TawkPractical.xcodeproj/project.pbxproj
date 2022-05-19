@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B8FCE5F654E28F5ED75E2F /* Pods_TawkPracticalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FBC3E2B04DD5ADF8CD6D28 /* Pods_TawkPracticalTests.framework */; };
+		1C463A8DDEE3B8C4DB589CC8 /* Pods_TawkPractical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B768322D84A90FC0B778E8 /* Pods_TawkPractical.framework */; };
+		46C514773B642D86B3DBA9F9 /* Pods_TawkPractical_TawkPracticalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3658F221FDB5B779D3F24196 /* Pods_TawkPractical_TawkPracticalUITests.framework */; };
+		FA6FF66528353C970077D121 /* InvertedColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FF66428353C970077D121 /* InvertedColorTableViewCell.swift */; };
+		FA6FF66628353C970077D121 /* InvertedColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FF66428353C970077D121 /* InvertedColorTableViewCell.swift */; };
+		FA6FF66728353C970077D121 /* InvertedColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FF66428353C970077D121 /* InvertedColorTableViewCell.swift */; };
+		FA9846722834CD5B006E71FD /* ImageLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9846712834CD5B006E71FD /* ImageLoading.swift */; };
+		FA9846732834CD5B006E71FD /* ImageLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9846712834CD5B006E71FD /* ImageLoading.swift */; };
+		FA9846742834CD5B006E71FD /* ImageLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9846712834CD5B006E71FD /* ImageLoading.swift */; };
+		FAA602782832A86B005C0590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602772832A86B005C0590 /* AppDelegate.swift */; };
+		FAA6027A2832A86B005C0590 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602792832A86B005C0590 /* SceneDelegate.swift */; };
+		FAA6027C2832A86B005C0590 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6027B2832A86B005C0590 /* UserListViewController.swift */; };
+		FAA6027F2832A86B005C0590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6027D2832A86B005C0590 /* Main.storyboard */; };
+		FAA602822832A86B005C0590 /* TawkPractical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA602802832A86B005C0590 /* TawkPractical.xcdatamodeld */; };
+		FAA602842832A86D005C0590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA602832832A86D005C0590 /* Assets.xcassets */; };
+		FAA602872832A86D005C0590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA602852832A86D005C0590 /* LaunchScreen.storyboard */; };
+		FAA602922832A86D005C0590 /* TawkPracticalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602912832A86D005C0590 /* TawkPracticalTests.swift */; };
+		FAA6029C2832A86D005C0590 /* TawkPracticalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6029B2832A86D005C0590 /* TawkPracticalUITests.swift */; };
+		FAA6029E2832A86D005C0590 /* TawkPracticalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6029D2832A86D005C0590 /* TawkPracticalUITestsLaunchTests.swift */; };
+		FAA602AF28330757005C0590 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602AE28330757005C0590 /* UserListViewModel.swift */; };
+		FAA602B028330757005C0590 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602AE28330757005C0590 /* UserListViewModel.swift */; };
+		FAA602B128330757005C0590 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602AE28330757005C0590 /* UserListViewModel.swift */; };
+		FAA602B4283307E4005C0590 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602B3283307E4005C0590 /* APIManager.swift */; };
+		FAA602B5283307E4005C0590 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602B3283307E4005C0590 /* APIManager.swift */; };
+		FAA602B6283307E4005C0590 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602B3283307E4005C0590 /* APIManager.swift */; };
+		FAA602B8283309A3005C0590 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602B7283309A3005C0590 /* UserList.swift */; };
+		FAA602B9283309A3005C0590 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602B7283309A3005C0590 /* UserList.swift */; };
+		FAA602BA283309A3005C0590 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602B7283309A3005C0590 /* UserList.swift */; };
+		FAA602BD28330D1A005C0590 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602BC28330D1A005C0590 /* UserListTableViewCell.swift */; };
+		FAA602BE28330D1A005C0590 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602BC28330D1A005C0590 /* UserListTableViewCell.swift */; };
+		FAA602BF28330D1A005C0590 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602BC28330D1A005C0590 /* UserListTableViewCell.swift */; };
+		FAA602C12833131D005C0590 /* UserNoteIndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C02833131D005C0590 /* UserNoteIndicatorTableViewCell.swift */; };
+		FAA602C22833131D005C0590 /* UserNoteIndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C02833131D005C0590 /* UserNoteIndicatorTableViewCell.swift */; };
+		FAA602C32833131D005C0590 /* UserNoteIndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C02833131D005C0590 /* UserNoteIndicatorTableViewCell.swift */; };
+		FAA602C628331515005C0590 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C428331515005C0590 /* DataHandler.swift */; };
+		FAA602C728331515005C0590 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C428331515005C0590 /* DataHandler.swift */; };
+		FAA602C828331515005C0590 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C428331515005C0590 /* DataHandler.swift */; };
+		FAA602C928331515005C0590 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C528331515005C0590 /* Constants.swift */; };
+		FAA602CA28331515005C0590 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C528331515005C0590 /* Constants.swift */; };
+		FAA602CB28331515005C0590 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602C528331515005C0590 /* Constants.swift */; };
+		FAA602CC28331B43005C0590 /* TawkPractical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA602802832A86B005C0590 /* TawkPractical.xcdatamodeld */; };
+		FAA602CD28331B43005C0590 /* TawkPractical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA602802832A86B005C0590 /* TawkPractical.xcdatamodeld */; };
+		FAA602D028331F0A005C0590 /* UsersList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602CE28331F0A005C0590 /* UsersList+CoreDataClass.swift */; };
+		FAA602D128331F0A005C0590 /* UsersList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602CE28331F0A005C0590 /* UsersList+CoreDataClass.swift */; };
+		FAA602D228331F0A005C0590 /* UsersList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602CE28331F0A005C0590 /* UsersList+CoreDataClass.swift */; };
+		FAA602D328331F0A005C0590 /* UsersList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602CF28331F0A005C0590 /* UsersList+CoreDataProperties.swift */; };
+		FAA602D428331F0A005C0590 /* UsersList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602CF28331F0A005C0590 /* UsersList+CoreDataProperties.swift */; };
+		FAA602D528331F0A005C0590 /* UsersList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602CF28331F0A005C0590 /* UsersList+CoreDataProperties.swift */; };
+		FAA602D7283326D7005C0590 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602D6283326D7005C0590 /* UserDetail.swift */; };
+		FAA602D8283326D7005C0590 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602D6283326D7005C0590 /* UserDetail.swift */; };
+		FAA602D9283326D7005C0590 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602D6283326D7005C0590 /* UserDetail.swift */; };
+		FAA602DB28339E33005C0590 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602DA28339E33005C0590 /* UserDetailsViewController.swift */; };
+		FAA602DC28339E33005C0590 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602DA28339E33005C0590 /* UserDetailsViewController.swift */; };
+		FAA602DD28339E33005C0590 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA602DA28339E33005C0590 /* UserDetailsViewController.swift */; };
+		FADAEDF82834A83D00878BC3 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEDF72834A83D00878BC3 /* AppUtility.swift */; };
+		FADAEDF92834A83D00878BC3 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEDF72834A83D00878BC3 /* AppUtility.swift */; };
+		FADAEDFA2834A83D00878BC3 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEDF72834A83D00878BC3 /* AppUtility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA6028E2832A86D005C0590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA6026C2832A86B005C0590 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA602732832A86B005C0590;
+			remoteInfo = TawkPractical;
+		};
+		FAA602982832A86D005C0590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA6026C2832A86B005C0590 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA602732832A86B005C0590;
+			remoteInfo = TawkPractical;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34B768322D84A90FC0B778E8 /* Pods_TawkPractical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TawkPractical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3658F221FDB5B779D3F24196 /* Pods_TawkPractical_TawkPracticalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TawkPractical_TawkPracticalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C55DDBBF7C5C988B33D8A35 /* Pods-TawkPracticalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawkPracticalTests.release.xcconfig"; path = "Target Support Files/Pods-TawkPracticalTests/Pods-TawkPracticalTests.release.xcconfig"; sourceTree = "<group>"; };
+		63DBFC4BA12D6A9716CDFB8A /* Pods-TawkPractical-TawkPracticalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawkPractical-TawkPracticalUITests.release.xcconfig"; path = "Target Support Files/Pods-TawkPractical-TawkPracticalUITests/Pods-TawkPractical-TawkPracticalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		76A800D4CD1D8E1A1AE8F42C /* Pods-TawkPractical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawkPractical.release.xcconfig"; path = "Target Support Files/Pods-TawkPractical/Pods-TawkPractical.release.xcconfig"; sourceTree = "<group>"; };
+		8C7C105EBE07F9A688823D7E /* Pods-TawkPractical-TawkPracticalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawkPractical-TawkPracticalUITests.debug.xcconfig"; path = "Target Support Files/Pods-TawkPractical-TawkPracticalUITests/Pods-TawkPractical-TawkPracticalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDD0261D770462D97415B1B0 /* Pods-TawkPracticalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawkPracticalTests.debug.xcconfig"; path = "Target Support Files/Pods-TawkPracticalTests/Pods-TawkPracticalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D66F5EA4C49CCE4BF3394E8A /* Pods-TawkPractical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawkPractical.debug.xcconfig"; path = "Target Support Files/Pods-TawkPractical/Pods-TawkPractical.debug.xcconfig"; sourceTree = "<group>"; };
+		F6FBC3E2B04DD5ADF8CD6D28 /* Pods_TawkPracticalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TawkPracticalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6FF66428353C970077D121 /* InvertedColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedColorTableViewCell.swift; sourceTree = "<group>"; };
+		FA9846712834CD5B006E71FD /* ImageLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoading.swift; sourceTree = "<group>"; };
+		FAA602742832A86B005C0590 /* TawkPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TawkPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA602772832A86B005C0590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA602792832A86B005C0590 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAA6027B2832A86B005C0590 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		FAA6027E2832A86B005C0590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA602812832A86B005C0590 /* TawkPractical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TawkPractical.xcdatamodel; sourceTree = "<group>"; };
+		FAA602832832A86D005C0590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA602862832A86D005C0590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA602882832A86D005C0590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA6028D2832A86D005C0590 /* TawkPracticalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TawkPracticalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA602912832A86D005C0590 /* TawkPracticalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawkPracticalTests.swift; sourceTree = "<group>"; };
+		FAA602972832A86D005C0590 /* TawkPracticalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TawkPracticalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA6029B2832A86D005C0590 /* TawkPracticalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawkPracticalUITests.swift; sourceTree = "<group>"; };
+		FAA6029D2832A86D005C0590 /* TawkPracticalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TawkPracticalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAA602AE28330757005C0590 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		FAA602B3283307E4005C0590 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FAA602B7283309A3005C0590 /* UserList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		FAA602BC28330D1A005C0590 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		FAA602C02833131D005C0590 /* UserNoteIndicatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNoteIndicatorTableViewCell.swift; sourceTree = "<group>"; };
+		FAA602C428331515005C0590 /* DataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		FAA602C528331515005C0590 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAA602CE28331F0A005C0590 /* UsersList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UsersList+CoreDataClass.swift"; path = "TawkPractical/Model/CoreData/UsersList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FAA602CF28331F0A005C0590 /* UsersList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UsersList+CoreDataProperties.swift"; path = "TawkPractical/Model/CoreData/UsersList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FAA602D6283326D7005C0590 /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		FAA602DA28339E33005C0590 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		FADAEDF72834A83D00878BC3 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA602712832A86B005C0590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C463A8DDEE3B8C4DB589CC8 /* Pods_TawkPractical.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA6028A2832A86D005C0590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B8FCE5F654E28F5ED75E2F /* Pods_TawkPracticalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA602942832A86D005C0590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C514773B642D86B3DBA9F9 /* Pods_TawkPractical_TawkPracticalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41E96474D68268E35FB7AC90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34B768322D84A90FC0B778E8 /* Pods_TawkPractical.framework */,
+				3658F221FDB5B779D3F24196 /* Pods_TawkPractical_TawkPracticalUITests.framework */,
+				F6FBC3E2B04DD5ADF8CD6D28 /* Pods_TawkPracticalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB38DEDCA245572186D8CD90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D66F5EA4C49CCE4BF3394E8A /* Pods-TawkPractical.debug.xcconfig */,
+				76A800D4CD1D8E1A1AE8F42C /* Pods-TawkPractical.release.xcconfig */,
+				8C7C105EBE07F9A688823D7E /* Pods-TawkPractical-TawkPracticalUITests.debug.xcconfig */,
+				63DBFC4BA12D6A9716CDFB8A /* Pods-TawkPractical-TawkPracticalUITests.release.xcconfig */,
+				CDD0261D770462D97415B1B0 /* Pods-TawkPracticalTests.debug.xcconfig */,
+				4C55DDBBF7C5C988B33D8A35 /* Pods-TawkPracticalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FAA6026B2832A86B005C0590 = {
+			isa = PBXGroup;
+			children = (
+				FAA602CE28331F0A005C0590 /* UsersList+CoreDataClass.swift */,
+				FAA602CF28331F0A005C0590 /* UsersList+CoreDataProperties.swift */,
+				FAA602762832A86B005C0590 /* TawkPractical */,
+				FAA602902832A86D005C0590 /* TawkPracticalTests */,
+				FAA6029A2832A86D005C0590 /* TawkPracticalUITests */,
+				FAA602752832A86B005C0590 /* Products */,
+				AB38DEDCA245572186D8CD90 /* Pods */,
+				41E96474D68268E35FB7AC90 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA602752832A86B005C0590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602742832A86B005C0590 /* TawkPractical.app */,
+				FAA6028D2832A86D005C0590 /* TawkPracticalTests.xctest */,
+				FAA602972832A86D005C0590 /* TawkPracticalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA602762832A86B005C0590 /* TawkPractical */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602AC28330649005C0590 /* Model */,
+				FAA602AA28330649005C0590 /* ViewController */,
+				FAA602AB28330649005C0590 /* ViewModel */,
+				FAA602AD28330660005C0590 /* Utilizes */,
+				FAA602772832A86B005C0590 /* AppDelegate.swift */,
+				FAA602792832A86B005C0590 /* SceneDelegate.swift */,
+				FAA6027D2832A86B005C0590 /* Main.storyboard */,
+				FAA602832832A86D005C0590 /* Assets.xcassets */,
+				FAA602852832A86D005C0590 /* LaunchScreen.storyboard */,
+				FAA602882832A86D005C0590 /* Info.plist */,
+				FAA602802832A86B005C0590 /* TawkPractical.xcdatamodeld */,
+			);
+			path = TawkPractical;
+			sourceTree = "<group>";
+		};
+		FAA602902832A86D005C0590 /* TawkPracticalTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602912832A86D005C0590 /* TawkPracticalTests.swift */,
+			);
+			path = TawkPracticalTests;
+			sourceTree = "<group>";
+		};
+		FAA6029A2832A86D005C0590 /* TawkPracticalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6029B2832A86D005C0590 /* TawkPracticalUITests.swift */,
+				FAA6029D2832A86D005C0590 /* TawkPracticalUITestsLaunchTests.swift */,
+			);
+			path = TawkPracticalUITests;
+			sourceTree = "<group>";
+		};
+		FAA602AA28330649005C0590 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602BB28330D03005C0590 /* Cells */,
+				FAA6027B2832A86B005C0590 /* UserListViewController.swift */,
+				FAA602DA28339E33005C0590 /* UserDetailsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAA602AB28330649005C0590 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602AE28330757005C0590 /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAA602AC28330649005C0590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602D6283326D7005C0590 /* UserDetail.swift */,
+				FAA602B7283309A3005C0590 /* UserList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAA602AD28330660005C0590 /* Utilizes */ = {
+			isa = PBXGroup;
+			children = (
+				FADAEDF72834A83D00878BC3 /* AppUtility.swift */,
+				FAA602C528331515005C0590 /* Constants.swift */,
+				FAA602C428331515005C0590 /* DataHandler.swift */,
+				FAA602B2283307C7005C0590 /* NetworkManager */,
+				FA9846712834CD5B006E71FD /* ImageLoading.swift */,
+			);
+			path = Utilizes;
+			sourceTree = "<group>";
+		};
+		FAA602B2283307C7005C0590 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602B3283307E4005C0590 /* APIManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		FAA602BB28330D03005C0590 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAA602BC28330D1A005C0590 /* UserListTableViewCell.swift */,
+				FAA602C02833131D005C0590 /* UserNoteIndicatorTableViewCell.swift */,
+				FA6FF66428353C970077D121 /* InvertedColorTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA602732832A86B005C0590 /* TawkPractical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA602A12832A86D005C0590 /* Build configuration list for PBXNativeTarget "TawkPractical" */;
+			buildPhases = (
+				EEBCDDD5FB38D58466CDDF91 /* [CP] Check Pods Manifest.lock */,
+				FAA602702832A86B005C0590 /* Sources */,
+				FAA602712832A86B005C0590 /* Frameworks */,
+				FAA602722832A86B005C0590 /* Resources */,
+				F5AE2820EA8268097EDA6A8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TawkPractical;
+			productName = TawkPractical;
+			productReference = FAA602742832A86B005C0590 /* TawkPractical.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA6028C2832A86D005C0590 /* TawkPracticalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA602A42832A86D005C0590 /* Build configuration list for PBXNativeTarget "TawkPracticalTests" */;
+			buildPhases = (
+				0F7289FECBDA12DFFAA5CCA9 /* [CP] Check Pods Manifest.lock */,
+				FAA602892832A86D005C0590 /* Sources */,
+				FAA6028A2832A86D005C0590 /* Frameworks */,
+				FAA6028B2832A86D005C0590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA6028F2832A86D005C0590 /* PBXTargetDependency */,
+			);
+			name = TawkPracticalTests;
+			productName = TawkPracticalTests;
+			productReference = FAA6028D2832A86D005C0590 /* TawkPracticalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAA602962832A86D005C0590 /* TawkPracticalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA602A72832A86D005C0590 /* Build configuration list for PBXNativeTarget "TawkPracticalUITests" */;
+			buildPhases = (
+				CB39518833CA49D4D4F657D9 /* [CP] Check Pods Manifest.lock */,
+				FAA602932832A86D005C0590 /* Sources */,
+				FAA602942832A86D005C0590 /* Frameworks */,
+				FAA602952832A86D005C0590 /* Resources */,
+				D64A38DCF0596DFAAA0CADE7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA602992832A86D005C0590 /* PBXTargetDependency */,
+			);
+			name = TawkPracticalUITests;
+			productName = TawkPracticalUITests;
+			productReference = FAA602972832A86D005C0590 /* TawkPracticalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA6026C2832A86B005C0590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FAA602732832A86B005C0590 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FAA6028C2832A86D005C0590 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FAA602732832A86B005C0590;
+					};
+					FAA602962832A86D005C0590 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FAA602732832A86B005C0590;
+					};
+				};
+			};
+			buildConfigurationList = FAA6026F2832A86B005C0590 /* Build configuration list for PBXProject "TawkPractical" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA6026B2832A86B005C0590;
+			productRefGroup = FAA602752832A86B005C0590 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA602732832A86B005C0590 /* TawkPractical */,
+				FAA6028C2832A86D005C0590 /* TawkPracticalTests */,
+				FAA602962832A86D005C0590 /* TawkPracticalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA602722832A86B005C0590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA602872832A86D005C0590 /* LaunchScreen.storyboard in Resources */,
+				FAA602842832A86D005C0590 /* Assets.xcassets in Resources */,
+				FAA6027F2832A86B005C0590 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA6028B2832A86D005C0590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA602952832A86D005C0590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F7289FECBDA12DFFAA5CCA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TawkPracticalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB39518833CA49D4D4F657D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TawkPractical-TawkPracticalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D64A38DCF0596DFAAA0CADE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TawkPractical-TawkPracticalUITests/Pods-TawkPractical-TawkPracticalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TawkPractical-TawkPracticalUITests/Pods-TawkPractical-TawkPracticalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TawkPractical-TawkPracticalUITests/Pods-TawkPractical-TawkPracticalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBCDDD5FB38D58466CDDF91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TawkPractical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5AE2820EA8268097EDA6A8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TawkPractical/Pods-TawkPractical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TawkPractical/Pods-TawkPractical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TawkPractical/Pods-TawkPractical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA602702832A86B005C0590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA602B4283307E4005C0590 /* APIManager.swift in Sources */,
+				FAA602D7283326D7005C0590 /* UserDetail.swift in Sources */,
+				FADAEDF82834A83D00878BC3 /* AppUtility.swift in Sources */,
+				FAA602C928331515005C0590 /* Constants.swift in Sources */,
+				FA6FF66528353C970077D121 /* InvertedColorTableViewCell.swift in Sources */,
+				FAA602822832A86B005C0590 /* TawkPractical.xcdatamodeld in Sources */,
+				FAA6027C2832A86B005C0590 /* UserListViewController.swift in Sources */,
+				FAA602DB28339E33005C0590 /* UserDetailsViewController.swift in Sources */,
+				FAA602C12833131D005C0590 /* UserNoteIndicatorTableViewCell.swift in Sources */,
+				FAA602C628331515005C0590 /* DataHandler.swift in Sources */,
+				FAA602D028331F0A005C0590 /* UsersList+CoreDataClass.swift in Sources */,
+				FAA602782832A86B005C0590 /* AppDelegate.swift in Sources */,
+				FAA602D328331F0A005C0590 /* UsersList+CoreDataProperties.swift in Sources */,
+				FAA602BD28330D1A005C0590 /* UserListTableViewCell.swift in Sources */,
+				FAA6027A2832A86B005C0590 /* SceneDelegate.swift in Sources */,
+				FAA602B8283309A3005C0590 /* UserList.swift in Sources */,
+				FAA602AF28330757005C0590 /* UserListViewModel.swift in Sources */,
+				FA9846722834CD5B006E71FD /* ImageLoading.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA602892832A86D005C0590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADAEDF92834A83D00878BC3 /* AppUtility.swift in Sources */,
+				FAA602D128331F0A005C0590 /* UsersList+CoreDataClass.swift in Sources */,
+				FAA602D8283326D7005C0590 /* UserDetail.swift in Sources */,
+				FAA602C22833131D005C0590 /* UserNoteIndicatorTableViewCell.swift in Sources */,
+				FAA602CC28331B43005C0590 /* TawkPractical.xcdatamodeld in Sources */,
+				FAA602C728331515005C0590 /* DataHandler.swift in Sources */,
+				FAA602BE28330D1A005C0590 /* UserListTableViewCell.swift in Sources */,
+				FAA602B9283309A3005C0590 /* UserList.swift in Sources */,
+				FAA602D428331F0A005C0590 /* UsersList+CoreDataProperties.swift in Sources */,
+				FAA602DC28339E33005C0590 /* UserDetailsViewController.swift in Sources */,
+				FAA602B5283307E4005C0590 /* APIManager.swift in Sources */,
+				FAA602922832A86D005C0590 /* TawkPracticalTests.swift in Sources */,
+				FA6FF66628353C970077D121 /* InvertedColorTableViewCell.swift in Sources */,
+				FA9846732834CD5B006E71FD /* ImageLoading.swift in Sources */,
+				FAA602B028330757005C0590 /* UserListViewModel.swift in Sources */,
+				FAA602CA28331515005C0590 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA602932832A86D005C0590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA602BA283309A3005C0590 /* UserList.swift in Sources */,
+				FAA602B6283307E4005C0590 /* APIManager.swift in Sources */,
+				FADAEDFA2834A83D00878BC3 /* AppUtility.swift in Sources */,
+				FAA602D528331F0A005C0590 /* UsersList+CoreDataProperties.swift in Sources */,
+				FAA602CD28331B43005C0590 /* TawkPractical.xcdatamodeld in Sources */,
+				FAA602DD28339E33005C0590 /* UserDetailsViewController.swift in Sources */,
+				FAA6029C2832A86D005C0590 /* TawkPracticalUITests.swift in Sources */,
+				FAA602C32833131D005C0590 /* UserNoteIndicatorTableViewCell.swift in Sources */,
+				FA6FF66728353C970077D121 /* InvertedColorTableViewCell.swift in Sources */,
+				FAA602C828331515005C0590 /* DataHandler.swift in Sources */,
+				FAA602D9283326D7005C0590 /* UserDetail.swift in Sources */,
+				FAA602B128330757005C0590 /* UserListViewModel.swift in Sources */,
+				FAA602BF28330D1A005C0590 /* UserListTableViewCell.swift in Sources */,
+				FAA6029E2832A86D005C0590 /* TawkPracticalUITestsLaunchTests.swift in Sources */,
+				FAA602CB28331515005C0590 /* Constants.swift in Sources */,
+				FA9846742834CD5B006E71FD /* ImageLoading.swift in Sources */,
+				FAA602D228331F0A005C0590 /* UsersList+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA6028F2832A86D005C0590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA602732832A86B005C0590 /* TawkPractical */;
+			targetProxy = FAA6028E2832A86D005C0590 /* PBXContainerItemProxy */;
+		};
+		FAA602992832A86D005C0590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA602732832A86B005C0590 /* TawkPractical */;
+			targetProxy = FAA602982832A86D005C0590 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA6027D2832A86B005C0590 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA6027E2832A86B005C0590 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA602852832A86D005C0590 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA602862832A86D005C0590 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA6029F2832A86D005C0590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA602A02832A86D005C0590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA602A22832A86D005C0590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66F5EA4C49CCE4BF3394E8A /* Pods-TawkPractical.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S927WN7H28;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TawkPractical/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.SelfTest.TawkPractical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA602A32832A86D005C0590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A800D4CD1D8E1A1AE8F42C /* Pods-TawkPractical.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S927WN7H28;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TawkPractical/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.SelfTest.TawkPractical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAA602A52832A86D005C0590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD0261D770462D97415B1B0 /* Pods-TawkPracticalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.SelfTest.TawkPracticalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TawkPractical.app/TawkPractical";
+			};
+			name = Debug;
+		};
+		FAA602A62832A86D005C0590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C55DDBBF7C5C988B33D8A35 /* Pods-TawkPracticalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.SelfTest.TawkPracticalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TawkPractical.app/TawkPractical";
+			};
+			name = Release;
+		};
+		FAA602A82832A86D005C0590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7C105EBE07F9A688823D7E /* Pods-TawkPractical-TawkPracticalUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.SelfTest.TawkPracticalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TawkPractical;
+			};
+			name = Debug;
+		};
+		FAA602A92832A86D005C0590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63DBFC4BA12D6A9716CDFB8A /* Pods-TawkPractical-TawkPracticalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.SelfTest.TawkPracticalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TawkPractical;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA6026F2832A86B005C0590 /* Build configuration list for PBXProject "TawkPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA6029F2832A86D005C0590 /* Debug */,
+				FAA602A02832A86D005C0590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA602A12832A86D005C0590 /* Build configuration list for PBXNativeTarget "TawkPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA602A22832A86D005C0590 /* Debug */,
+				FAA602A32832A86D005C0590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA602A42832A86D005C0590 /* Build configuration list for PBXNativeTarget "TawkPracticalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA602A52832A86D005C0590 /* Debug */,
+				FAA602A62832A86D005C0590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA602A72832A86D005C0590 /* Build configuration list for PBXNativeTarget "TawkPracticalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA602A82832A86D005C0590 /* Debug */,
+				FAA602A92832A86D005C0590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAA602802832A86B005C0590 /* TawkPractical.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAA602812832A86B005C0590 /* TawkPractical.xcdatamodel */,
+			);
+			currentVersion = FAA602812832A86B005C0590 /* TawkPractical.xcdatamodel */;
+			path = TawkPractical.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAA6026C2832A86B005C0590 /* Project object */;
+}
