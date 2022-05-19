@@ -2,6 +2,13 @@
 # Please install the PODS
 
 
+#3Rd party which we installed 
+
+-> pod 'ReachabilitySwift' : To verify the internet Reachability.
+-> pod 'IQKeyboardManagerSwift': To Handle keyboard case in notes.
+-> pod 'SVProgressHUD' : To show progressHUD.
+
+
 
 1. In the first screen, the app has to fetch GitHub users list, parse it and display in the list (using UITableView or UICollectionView).
 2. Selecting a user has to fetch the user's profile data and open a profile view displaying the user's profile data.
