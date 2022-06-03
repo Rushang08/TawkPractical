@@ -1,0 +1,6 @@
+framework module Pods_TawkPractical {
+  umbrella header "Pods-TawkPractical-umbrella.h"
+
+  export *
+  module * { export * }
+}
